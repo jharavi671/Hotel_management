@@ -1,4 +1,3 @@
-import logo from './logo.svg'
 import searchIcon from './searchIcon.svg'
 import userIcon from './userIcon.svg'
 import calenderIcon from './calenderIcon.svg'
@@ -32,11 +31,12 @@ import exclusiveOfferCardImg1 from "./exclusiveOfferCardImg1.png";
 import exclusiveOfferCardImg2 from "./exclusiveOfferCardImg2.png";
 import exclusiveOfferCardImg3 from "./exclusiveOfferCardImg3.png";
 import addIcon from "./addIcon.svg";
-import dashboardIcon from "./dashboardIcon.svg";
 import listIcon from "./listIcon.svg";
 import uploadArea from "./uploadArea.svg";
 import totalBookingIcon from "./totalBookingIcon.svg";
 import totalRevenueIcon from "./totalRevenueIcon.svg";
+import logo from './logo.svg'; 
+import dashboardIcon from './dashboardIcon.svg';
 
 
 export const assets = {
@@ -106,10 +106,10 @@ export const facilityIcons = {
 
 // For Room Details Page
 export const roomCommonData = [
-    { icon: assets.homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
-    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
-    { icon: assets.locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
-    { icon: assets.heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
+  { icon: assets.homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
+  { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
+  { icon: assets.locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
+  { icon: assets.heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
 ];
 
 // User Dummy Data
@@ -150,6 +150,8 @@ export const roomsDummyData = [
         "amenities": ["Room Service", "Mountain View", "Pool Access"],
         "images": [roomImg1, roomImg2, roomImg3, roomImg4],
         "isAvailable": true,
+            commonData: roomCommonData,  // ✅ Add here too
+
         "createdAt": "2025-04-10T06:26:04.013Z",
         "updatedAt": "2025-04-10T06:26:04.013Z",
         "__v": 0
@@ -162,6 +164,8 @@ export const roomsDummyData = [
         "amenities": ["Room Service", "Mountain View", "Pool Access"],
         "images": [roomImg2, roomImg3, roomImg4, roomImg1],
         "isAvailable": true,
+            commonData: roomCommonData,  // ✅ Add here too
+
         "createdAt": "2025-04-10T06:25:22.593Z",
         "updatedAt": "2025-04-10T06:25:22.593Z",
         "__v": 0
@@ -174,6 +178,8 @@ export const roomsDummyData = [
         "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
         "images": [roomImg3, roomImg4, roomImg1, roomImg2],
         "isAvailable": true,
+         commonData: roomCommonData,  // ✅ Add here too
+
         "createdAt": "2025-04-10T06:24:06.285Z",
         "updatedAt": "2025-04-10T06:24:06.285Z",
         "__v": 0
@@ -186,6 +192,8 @@ export const roomsDummyData = [
         "amenities": ["Free WiFi", "Room Service", "Pool Access"],
         "images": [roomImg4, roomImg1, roomImg2, roomImg3],
         "isAvailable": true,
+         commonData: roomCommonData,  // ✅ Add here too
+
         "createdAt": "2025-04-10T06:23:20.252Z",
         "updatedAt": "2025-04-10T06:23:20.252Z",
         "__v": 0
